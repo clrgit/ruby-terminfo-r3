@@ -1,0 +1,7 @@
+extconf.h
+Makefile
+mkmf.log
+*.o
+*.so
+
+hold/
