@@ -1,19 +1,20 @@
 --- !ruby/object:Gem::Specification 
-name: ruby-terminfo
+name: ruby-terminfo-r3
 version: !ruby/object:Gem::Version 
   version: 0.1.1
 platform: ruby
 authors: 
 - Tanaka Akira
+- Claus Rasmussen
 autorequire: 
 bindir: bin
 cert_chain: []
 
-date: 2009-02-13 00:00:00 +13:00
+date: 2022-07-20 00:00:00 +02:00
 default_executable: 
 dependencies: []
 
-description: terminfo binding for Ruby
+description: terminfo binding for Ruby-3. Derives from the ruby-terminfo package
 email: akr@fsij.org
 executables: []
 
@@ -25,10 +26,10 @@ extra_rdoc_files:
 files: 
 - README
 - ChangeLog
-- Rakefile
 - lib/terminfo.rb
 - terminfo.c
 - extconf.rb
+- make_gem
 has_rdoc: true
 homepage: http://ruby-terminfo.rubyforge.org
 licenses: []
@@ -67,6 +68,6 @@ rubyforge_project: ruby-terminfo
 rubygems_version: 1.3.5
 signing_key: 
 specification_version: 2
-summary: terminfo binding for Ruby
+summary: terminfo binding for Ruby-3
 test_files: []
 
