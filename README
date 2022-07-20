@@ -1,3 +1,15 @@
+= ruby-terminfo-r3 - terminfo binding for Ruby-3
+
+ruby-terminfo-r3 is a terminfo binding for Ruby-3. It is a repackaged version
+of the Ruby-2 package ruby-terminfo. 
+
+Use './make_gem' to build the GEM.
+
+The home page for this package is https://github.com/clrgit/ruby-terminfo-r3,
+the original github page is http://github.com/akr/ruby-terminfo
+
+The original README follows below:
+
 = ruby-terminfo - terminfo binding for Ruby
 
 ruby-terminfo is a terminfo binding for Ruby
