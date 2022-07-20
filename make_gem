@@ -1,0 +1,24 @@
+#!/usr/bin/bash
+
+set -eo pipefail
+
+# Create the GEM package. The gem command is not used to create the package
+# because it doesn't contain a Gemspec file. Instead it is create using tar and
+# gzip
+
+NAME="ruby-terminfo-r3"
+VERSION="0.1.1"
+PCK=$NAME-$VERSION
+FILES="README ChangeLog lib/terminfo.rb terminfo.c extconf.rb make_gem"
+
+tar cf - $FILES | gzip --best --stdout >data.tar.gz
+gzip --best --stdout metadata >metadata.gz
+tar cf $PCK.gem data.tar.gz metadata.gz
+rm data.tar.gz metadata.gz
+
+
+#tar zcf - $FILES | gzip --best --stdout >data.tar.gz
+#gzip --best --stdout metadata >metadata.gz
+#tar cf $PCK.gem data.tar.gz metadata.gz
+#rm data.tar.gz metadata.gz
+
