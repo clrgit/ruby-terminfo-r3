@@ -31,7 +31,7 @@ files:
 - extconf.rb
 - make_gem
 has_rdoc: true
-homepage: http://ruby-terminfo.rubyforge.org
+homepage: https://github.com/clrgit/ruby-terminfo-r3
 licenses: []
 
 post_install_message: 
